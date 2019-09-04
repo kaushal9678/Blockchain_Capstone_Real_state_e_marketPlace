@@ -2,7 +2,7 @@
 
 A decentralized house listing service to prevent title issues that could be mitigated by blockchain technology.
 
-  ![alt text](./READMEPIC/storefront.png)
+  ![alt text](images/storefront.png)
 
 
 ## Versions
@@ -35,12 +35,18 @@ Implements Succinct Zero-knowledge proofs (zkSnarks).
         npm install
 
 2. Compile Contracts
+        ```
+        cd Blockchain-Capstone-Real-Estate-Marketplace/eth-contracts
 
+        ```
+        ```
         truffle compile
+
+        ```
 
 1. Start ganache (CLI or GUI)
 
-            ganache-cli
+            ganache-cli or you can also use Ganache GUI app
 
 2. Mirgrate locally
 
@@ -82,49 +88,41 @@ Test minting with zkSnarks.
 
 2. Setup truffle-config
 
-    2.1 set infuraKey (line 22)
+    2.1 set infuraKey (line 5)
 
-    2.2 set mnemonic from metamask within HDWalletProvider (line 53)
+    2.2 set mnemonic from metamask within HDWalletProvider (line 4)
 
-    2.3 set rinkeby endpoint within HDWalletProvider (line 53)
+    2.3 set rinkeby endpoint within HDWalletProvider (line 21)
 
-    2.4 set from address (line 57)
+    2.4 set from address (line 27)
 
 3. Migrate to rinkeby
 
         truffle migrate --network rinkeby
 
 4. Finding ER721 token on ether-scan
+  https://rinkeby.etherscan.io/token/0xe7b0009de5374b0f4249b03e5a0df4261262ffbc
 
-  https://rinkeby.etherscan.io/token/0x9bb4b411b7ccf04fcfc04a17179db3aa45f6b55d
 
-  ![alt text](./READMEPIC/etherscan.png)
+  ![alt text](images/etherscan.png)
 
 5. Minting tokens
 
   https://www.myetherwallet.com/interface/interact-with-contract
+  > Here while minting token you need to pass SolnSquareVerifier contract address and abi of this contract to mint your token.
+
 
 6. Finding tokes on rinkeby OpenSea
 
-  https://rinkeby.opensea.io/assets/0x9bb4b411b7ccf04fcfc04a17179db3aa45f6b55d/1
+  https://rinkeby.opensea.io/assets/0x06f3f0fe8fc54ba43b3da8595d417edf3d694d26/2
 
-  ![alt text](./READMEPIC/house.png)
+  ![alt text](images/homeSale.png)
 
 7. Viewing token Storefront on Opensea
 
-  https://rinkeby.opensea.io/assets/hst-erc721mintabletoken-v2
+  https://rinkeby.opensea.io/assets/hst-erc721mintabletoken
 
-  ![alt text](./READMEPIC/opensea.png)
-
-## assets
-
-  https://rinkeby.opensea.io/assets/0x9bb4b411b7ccf04fcfc04a17179db3aa45f6b55d/0
-  https://rinkeby.opensea.io/assets/0x9bb4b411b7ccf04fcfc04a17179db3aa45f6b55d/1
-  https://rinkeby.opensea.io/assets/0x9bb4b411b7ccf04fcfc04a17179db3aa45f6b55d/2
-  https://rinkeby.opensea.io/assets/0x9bb4b411b7ccf04fcfc04a17179db3aa45f6b55d/3
-  https://rinkeby.opensea.io/assets/0x9bb4b411b7ccf04fcfc04a17179db3aa45f6b55d/4
-  https://rinkeby.opensea.io/assets/0x9bb4b411b7ccf04fcfc04a17179db3aa45f6b55d/5
-
+  ![alt text](images/opensea.png)
 
 
 
