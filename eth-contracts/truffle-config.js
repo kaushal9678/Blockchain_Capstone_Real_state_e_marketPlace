@@ -1,8 +1,8 @@
 
 require('dotenv').config();
 const HDWalletProvider = require("truffle-hdwallet-provider");
-const mnemonic = "between slam inhale pet friend half label mixture identify seed sadness error";
-const infuraKey = "6a8d620faa0c4028adac14e8796732ca";
+const mnemonic = "metamask pass phrase";
+const infuraKey = "<infura key>";
 
 
 module.exports = {
@@ -24,7 +24,7 @@ module.exports = {
       network_id: "4",
       //gas: 4500000,
       //gasPrice: 10000000000,
-      from: "0x2768FD6671C00a61960562CbE4057b7ed112Eb82"
+      from: "meta mask rinkeby account"
     }
   },
 
