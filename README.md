@@ -35,14 +35,10 @@ Implements Succinct Zero-knowledge proofs (zkSnarks).
         npm install
 
 2. Compile Contracts
-        ```
+
         cd Blockchain-Capstone-Real-Estate-Marketplace/eth-contracts
 
-        ```
-        ```
         truffle compile
-
-        ```
 
 1. Start ganache (CLI or GUI)
 
