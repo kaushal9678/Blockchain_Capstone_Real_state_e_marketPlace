@@ -48,6 +48,8 @@ Implements Succinct Zero-knowledge proofs (zkSnarks).
 
               truffle migrate --network development --reset
 
+
+
 #### Testing contracts
 
 Testing ERC721
@@ -119,6 +121,12 @@ Test minting with zkSnarks.
   https://rinkeby.opensea.io/assets/hst-erc721mintabletoken
 
   ![alt text](images/opensea.png)
+
+  ###  assets
+  1. All Token Listing
+  ![alt text](images/allToken1.png)
+  ![alt text](images/tokenSale.png)
+  ![alt text](images/tx.png)
 
 
 
