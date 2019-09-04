@@ -10,8 +10,8 @@ contract('Square_verifier', accounts => {
     const account_two = accounts[1];
     const account_three = accounts[2];
     const account_four = accounts[3];
-    const symbol = "HST721";
-    const name = "HouseToken721";
+    const symbol = "HST722";
+    const name = "HouseToken722";
     const uri = "https://s3-us-west-2.amazonaws.com/udacity-blockchain/capstone/";
 
 
