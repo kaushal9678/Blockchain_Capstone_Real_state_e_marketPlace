@@ -129,7 +129,7 @@ Test minting with zkSnarks.
   ![alt text](images/tx.png)
 
 >###SolnSquareVerifier ABI
-
+```
 [
     {
       "constant": true,
@@ -779,6 +779,7 @@ Test minting with zkSnarks.
       "type": "function"
     }
   ]
+  ```
 ## Project Resources
 
 * [Remix - Solidity IDE](https://remix.ethereum.org/)
