@@ -1,8 +1,8 @@
 
 require('dotenv').config();
 const HDWalletProvider = require("truffle-hdwallet-provider");
-const mnemonic = "shuffle annual come swamp horse find trophy pact mercy tree rotate behind"; //"metamask pass phrase";
-const infuraKey = "6a8d620faa0c4028adac14e8796732ca";//"<infura key>";
+const mnemonic = "metamask pass phrase";
+const infuraKey = "<infura key>";
 
 
 module.exports = {
