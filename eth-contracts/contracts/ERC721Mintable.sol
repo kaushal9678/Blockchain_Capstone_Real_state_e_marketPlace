@@ -9,11 +9,18 @@ import "./Oraclize.sol";
 contract Ownable {
     //  TODO's
     //  1) create a private '_owner' variable of type address with a public getter function
-    address public _owner;
+    address private _owner;
+    //Public getter function
+   /// Look up the address of the owner
+    function owner() public view returns (address) {
+        return _owner;
+    }
     //  2) create an internal constructor that sets the _owner var to the creater of the contract
     constructor() internal {
       _owner = msg.sender;
     }
+
+    
     //  3) create an 'onlyOwner' modifier that throws if called by any account other than the owner.
     modifier onlyOwner() {
       require(_owner == msg.sender);

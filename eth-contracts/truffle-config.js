@@ -1,15 +1,15 @@
 
 require('dotenv').config();
 const HDWalletProvider = require("truffle-hdwallet-provider");
-const mnemonic = "metamask pass phrase";
-const infuraKey = "<infura key>";
+const mnemonic = "shuffle annual come swamp horse find trophy pact mercy tree rotate behind"; //"metamask pass phrase";
+const infuraKey = "6a8d620faa0c4028adac14e8796732ca";//"<infura key>";
 
 
 module.exports = {
   networks: {
     development: {
       host: "127.0.0.1", // Localhost (default: none)
-      port: 7545, // Standard Ethereum port (default: none)
+      port: 8545, // Standard Ethereum port (default: none)
       network_id: "*" // Any network (default: none)
     },
     // Useful for deploying to a public network.

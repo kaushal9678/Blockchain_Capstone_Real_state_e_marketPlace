@@ -19,7 +19,7 @@ contract('TestERC721Mintable', accounts => {
         })
         it('should return full tokenURI', async function() {
           let tokenURI = await this.contract.tokenURI(0);
-          console.log(tokenURI);
+          //console.log(tokenURI);
         })
 
 
@@ -51,11 +51,15 @@ contract('TestERC721Mintable', accounts => {
     describe('have ownership properties', function () {
         beforeEach(async function () {
             this.contract = await ERC721MintableComplete.new(name,symbol,{from: account_one});
+            //console.log("this.contract===",this.contract);
         })
 
         it('should fail when minting when address is not contract owner', async function () {
         try{
           let status = await this.contract.mint(account_two,8,{from:account_two});
+           let owner = await this.contract.owner.call();
+         
+          assert.equal(account_two, owner,"Minting address is not contract owner");
         }catch{
 
         }
@@ -63,7 +67,8 @@ contract('TestERC721Mintable', accounts => {
         })
 
         it('should return contract owner', async function () {
-          let owner = await this.contract._owner.call();
+          let owner = await this.contract.owner.call();
+          console.log("owner==",owner);
           assert.equal(owner, account_one,"Owner is not correct");
         })
 
