@@ -128,7 +128,8 @@ Test minting with zkSnarks.
   ![alt text](images/tokenSale.png)
   ![alt text](images/tx.png)
 
-> ###SolnSquareVerifier ABI
+>###SolnSquareVerifier ABI
+
 [
     {
       "constant": true,
